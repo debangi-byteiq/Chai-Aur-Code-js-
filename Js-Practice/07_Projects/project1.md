@@ -1,11 +1,11 @@
-#projects-related to dom
+# projects-related to dom
 
-##project link
+## project link
 [Click Here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
-#Solution code
+# Solution code
 
-##project 1
+## project 1
 
 ```javascript
 console.log('Hii')
@@ -41,7 +41,7 @@ switch(e.target.id){
 ```
 
 
-##project 2
+## project 2
 
 ```javascript
 const form = document.querySelector('form')
@@ -67,7 +67,7 @@ else if(weight === '' || weight<0 || isNaN(weight)){
 })
 ```
 
-##project 3
+## project 3
 
 ```javascript
 const clock = document.getElementById('clock');
@@ -81,7 +81,7 @@ setInterval(() => {
 }, 1000);
 ```
 
-##project 4
+## project 4
 
 ```javascript
 let randomNumber = parseInt(Math.random() * 100 + 1);
@@ -169,4 +169,4 @@ const newGame = () =>{
     playGame = true;
   });
 }
-```
+``` 

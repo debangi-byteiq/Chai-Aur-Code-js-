@@ -1,0 +1,21 @@
+Javascript:  Asyncronous
+            Single threaded  (by default)
+    
+Execution context: execute one line of code at a time
+                -> console.log ->1
+                -> console.log ->2
+                each operation waits for the last one to complete before executing
+            *call stack  
+            *memory heap
+            
+
+Blocking code vs Non blocking code:
+
+*Blocking: Block the flow of program -> Read file sync
+*Non-blocking: Does not block execution -> REad file Async
+
+Depends on usecases which one to use
+
+**fetch() API: The fetch API in JavaScript is a powerful tool for making network requests, primarily for fetching data from a server.
+               fetch returns a Promise, which represents the eventual completion (or failure) of the network request. This allows you to use asynchronous operations more elegantly.
+
