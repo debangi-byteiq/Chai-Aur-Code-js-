@@ -48,12 +48,20 @@ document.getElementById('owl').onclick = () =>{
     // e.stopPropagation()
 // }, false)
 
+
+
+//In JavaScript, propagation of events is done, which is known as 'Event Flow'.
+//  Event Flow is the sequence or order in which the particular web page receives the event. 
 document.querySelector('#images').addEventListener('click', (e)=>{
     console.log(e.target)
     console.log(e.target.parentNode);
-    
-    let removeIt = e.target.parentNode
-    removeIt.remove()
+    if (e.target.tagname === 'IMG'){
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+        console.log(e.target.id)
+    }//event spillover :event spillover refers to the propagation
+                        //  of an event to parent elements in the DOM when the event does not explicitly target or is not handled by the child element.
+   
     // removeIt.parentNode.removeChild(removeIt)
 }, false)
 
