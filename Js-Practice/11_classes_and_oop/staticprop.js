@@ -12,4 +12,14 @@ class User {
     }
 }
 const hitesh = new User("hitesh")
-console.log(hitesh.createId())
+// console.log(hitesh.createId())//createId is not accessible as it is defined static
+
+class Teacher extends User {
+    constructor(username, email){
+        super(username)
+        this.email = email
+    }
+}
+
+const iphone = new Teacher("iphone", "i@phone.com")
+console.log(iphone.createId());
