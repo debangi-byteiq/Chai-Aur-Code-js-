@@ -64,5 +64,6 @@ console.log(auto instanceof Object)//true :expected
 /***************
  Constructors: In JavaScript, constructors are functions that are specifically designed to create objects. They typically use the this keyword within their body to refer to the object being created.
 Arrow Functions: Arrow functions have a different internal scoping mechanism for this. The this value within an arrow function is lexically bound, meaning it's inherited from the enclosing scope (where the arrow function is defined), rather than being dynamically bound to the newly created object.*/
+// Due to prototypal behaviour of JS above occurs
 /* Avoid using arrow functions as constructors. Use traditional function declarations when you  intend to create objects using the new keyword. */
 
