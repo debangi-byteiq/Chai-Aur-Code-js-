@@ -1,3 +1,5 @@
+// Getters and setters allow you to define Object Accessors (Computed Properties).
+
 class User {
     constructor(email, password){
         this.email = email;
